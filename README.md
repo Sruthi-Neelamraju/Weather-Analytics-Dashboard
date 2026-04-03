@@ -40,46 +40,46 @@ A comprehensive web-based weather analytics application built with React, Redux 
 ### Installation
 
 1. Clone the repository:
-   ```bash
+   bash
    git clone <repository-url>
    cd weather-dashboard
-   ```
+   
 
 2. Install dependencies:
-   ```bash
+   bash
    npm install
-   ```
+   
 
-3. Get an API key from [OpenWeatherMap](https://openweathermap.org/api) and replace `YOUR_OPENWEATHERMAP_API_KEY` in the relevant files.
+3. Get an API key from [OpenWeatherMap](https://openweathermap.org/api) and replace YOUR_OPENWEATHERMAP_API_KEY in the relevant files.
 
 4. For Google Authentication, set up Firebase and add your config.
 
 5. Run the development server:
-   ```bash
+   bash
    npm run dev
-   ```
+   
 
 6. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## Project Structure
 
-```
+
 src/
-├── api/           # API service functions
-├── components/    # Reusable UI components
-├── hooks/         # Custom React hooks
-├── pages/         # Page components
-├── store/         # Redux store and slices
-├── types/         # TypeScript type definitions
-└── utils/         # Utility functions
-```
+    api/           # API service functions <br>
+    components/    # Reusable UI components <br>
+    hooks/         # Custom React hooks <br>
+    pages/         # Page components <br>
+    store/         # Redux store and slices <br>
+    types/         # TypeScript type definitions <br>
+    utils/         # Utility functions <br>
+
 
 ## Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
+- npm run dev - Start development server
+- npm run build - Build for production
+- npm run preview - Preview production build
+- npm run lint - Run ESLint
 
 ## API Usage
 
