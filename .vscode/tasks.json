@@ -1,0 +1,40 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "install",
+			"type": "shell",
+			"command": "npm"
+		},
+		{
+			"label": "install",
+			"type": "shell",
+			"command": "npm"
+		},
+		{
+			"label": "install",
+			"type": "shell",
+			"command": "npm"
+		},
+		{
+			"label": "install",
+			"type": "shell",
+			"command": "npm install"
+		},
+		{
+			"label": "install",
+			"type": "shell",
+			"command": "npm"
+		},
+		{
+			"label": "install",
+			"type": "shell",
+			"command": "npm"
+		},
+		{
+			"label": "install",
+			"type": "shell",
+			"command": "npm install"
+		}
+	]
+}

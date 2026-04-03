@@ -1,0 +1,128 @@
+.search-bar {
+  margin: 20px 0;
+}
+
+.search-input-container {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.search-input-wrapper {
+  /* Ensure the input wrapper itself doesn't have a bottom border 
+     when the dropdown is active */
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  width: 100%;
+  
+  /* CRITICAL: Constrains height to keep it on the page */
+  max-height: 250px; 
+  overflow-y: auto;  
+  
+  background-color: #1e2124;
+  
+  border-radius: 0 0 8px 8px;
+  margin-top: 0; 
+  padding: 0;
+  list-style: none;
+  z-index: 1000;
+  
+  /* Ensures it stays within the parent container's width */
+  box-sizing: border-box; 
+}
+
+.suggestions-dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.suggestions-dropdown::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+.suggestions-dropdown li {
+  padding: 12px;
+  cursor: pointer;
+  color: white;
+  border-top: none;
+}
+
+.suggestions-dropdown li:hover {
+  background-color: #333;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+
+.search-button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.search-button svg {
+  font-size: 16px;
+}
+
+.suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--card-border, #ddd);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  background: var(--card-bg, #ffffff);
+  color: var(--text, #101827);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.suggestions-list li {
+  padding: 10px 14px;
+  cursor: pointer;
+  background: transparent;
+  color: var(--text, #101827);
+}
+
+.suggestions-list li:hover,
+.suggestions-list li.active {
+  background: var(--highlight, #f0f4ff);
+  color: var(--text, #101827);
+}
+
+.dark-theme .suggestions-list {
+  border: 1px solid #3c4a5a;
+  background: #1f2937;
+  color: #f5f7ff;
+}
+
+.dark-theme .suggestions-list li:hover,
+.dark-theme .suggestions-list li.active {
+  background: #2a3b50;
+  color: #f5f7ff;
+}
