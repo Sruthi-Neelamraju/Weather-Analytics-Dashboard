@@ -64,7 +64,7 @@ A comprehensive web-based weather analytics application built with React, Redux 
 ## Project Structure
 
 
-src/
+src/<br>
     api/           # API service functions <br>
     components/    # Reusable UI components <br>
     hooks/         # Custom React hooks <br>
